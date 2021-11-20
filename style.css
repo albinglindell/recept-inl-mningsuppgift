@@ -185,7 +185,7 @@ img{
 @media screen and (max-width: 600px){
     	.first-article, .second-article, .third-article{
             width: 95%;
-            margin: 0 0 0 2.5%;
+            margin: 0 0 5% 2.5%;
             
         }
         .recept nav{
