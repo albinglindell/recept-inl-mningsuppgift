@@ -97,7 +97,7 @@ img{
     flex-direction: column;
     align-items: center;
     width: 30%;
-    height: 200px;
+    height: 150px;
     justify-content: space-between;
     text-align: center;
 }
@@ -183,7 +183,11 @@ img{
 
 
 @media screen and (max-width: 600px){
-   
+    	.first-article, .second-article, .third-article{
+            width: 95%;
+            margin: 0 0 0 2.5%;
+            
+        }
         .recept nav{
             display: none;
             background: rgb(103, 231, 142);
@@ -198,19 +202,19 @@ img{
             background: white;
         }
         .hamburger{
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             position: relative;
-            top: -130%;
+            top: 190%;
             left: 50%;
         }
         .hamburger-bar{
             background: black;
             width: 100%;
-            height: 4px;      
+            height: 3px;      
             border-radius: 10px;
             transition: all ease-in .3s;
         }
@@ -218,26 +222,26 @@ img{
             content: "";
             position: absolute;
             width: 100%;
-            height: 4px;
+            height: 3px;
             background: black;
             border-radius: 10px;
             transition: all ease-in .3s;
         }
         .hamburger-bar::before{
-        top: 10%;
+        top: 9%;
     }
     .hamburger-bar::after{
-        bottom: 10%;
+        bottom: 9%;
     }
     .hamburger-active .hamburger-bar::before{
-        transform: rotate(45deg) translateY(10px) translateX(25%);
+        transform: rotate(45deg) translateY(7.5px) translateX(25%);
     
     }
     .hamburger-active .hamburger-bar{
         background: transparent;
     }
     .hamburger-active .hamburger-bar::after{
-        transform: rotate(-45deg) translateY(-10px) translateX(25%);
+        transform: rotate(-45deg) translateY(-7.5px) translateX(25%);
     }
     .header1{
         left: 0;
@@ -247,18 +251,25 @@ img{
         width: 50%;
     }
     .header-container .matratt{
-        font-size: 20px;
+        font-size: 15px;
     }
     .header-container .forklaring{
-        font-size: 15px;
+        font-size: 10px;
     }
     img{
         width: 35%;
     }
+    .tillbehor-container ul{
+        width: 95%;
+    }
+    .tillbehor-container ul li{
+        font-size: 13px;
+    }
     .tillbehor-container{
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         align-items: center;
+        margin: 10% 0;
     }
     .innehall{
         width: 90%;
