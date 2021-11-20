@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    
+}
+h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+li, a{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(233, 255, 231);
+}
+.first-article,.second-article,.third-article{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0% 0 5% 10%;
+}
+h1{
+    margin: auto;
+    padding: 30px 0;
+}
+.recept{
+    width: 90px;
+    height: 130px;
+    align-self: flex-end;
+    position: fixed;
+    top: 200px;
+    right: 15px;
+}
+.recept a:hover,.liknande-recept a:hover{
+    background: rgb(192, 255, 187);
+}
+.recept nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+.recept nav a{
+    text-decoration: 0;
+    font-size: 12px;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+article{
+    margin: 0% 10%;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px 10px rgb(163, 163, 163);
+    background: white;
+    
+}
+
+.header1{
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    left: -25%;
+    
+}
+.header1 h1{
+    font-size: 35px;
+    text-shadow: -2px 4px 3px rgb(156, 156, 156);
+    border: 1px solid black;
+    padding: 2%;
+    font-weight: 100;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    margin: 7% 0%;
+}
+
+img{
+    width:40%;
+}
+.heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 200px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.forklaring{
+    margin: 20px 0;
+}
+.innehall ul li{
+    margin: 20px 0;
+}
+.innehall .underrubrik, .howto .underrubrik{
+    font-size: 25px;
+}
+.howto{
+    width: 25%;
+}
+.howto ol{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tillbehor-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20% 0 0 0;
+}
+
+.second-article .tillbehor-container{
+    min-height: 250px
+}
+.third-article .tillbehor-container{
+    min-height: 600px;
+}
+ .second-article .innehall ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+.funfact{
+    width: 45%;
+    margin: 10% 0 0 0;
+    padding: 25px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 20px 5px rgb(180, 180, 180);
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: rgba(102, 224, 91, 0.425);
+}
+.liknande-recept-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0 10% 0;
+    border: 1px solid black;
+    width: 30%;
+    box-shadow: 5px 5px 20px 5px rgb(180, 180, 180);
+    background: rgba(61, 150, 61, 0.411);
+}
+.liknande-recept-container h6{
+    margin: 7% 0 0 0;
+    font-size: 15px;
+ 
+}
+.liknande-recept{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.liknande-recept a{
+   color: black;
+   text-decoration: none;
+   margin: 5% 0 0 0;
+   border: 1px solid black;
+   padding: 5px;
+   border-radius: 10px;
+    background: rgba(245, 245, 220, 0.651);
+}
+
+
+@media screen and (max-width: 600px){
+   
+        .recept nav{
+            display: none;
+            background: rgb(103, 231, 142);
+            width: 150px;
+            box-shadow: 0 0 1px 50px rgb(103, 231, 142);
+            position: absolute;
+            right: 40%;
+            bottom: 3%;
+            
+        }
+        .recept nav a{
+            background: white;
+        }
+        .hamburger{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            top: -130%;
+            left: 50%;
+        }
+        .hamburger-bar{
+            background: black;
+            width: 100%;
+            height: 4px;      
+            border-radius: 10px;
+            transition: all ease-in .3s;
+        }
+        .hamburger-bar::before, .hamburger-bar::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background: black;
+            border-radius: 10px;
+            transition: all ease-in .3s;
+        }
+        .hamburger-bar::before{
+        top: 10%;
+    }
+    .hamburger-bar::after{
+        bottom: 10%;
+    }
+    .hamburger-active .hamburger-bar::before{
+        transform: rotate(45deg) translateY(10px) translateX(25%);
+    
+    }
+    .hamburger-active .hamburger-bar{
+        background: transparent;
+    }
+    .hamburger-active .hamburger-bar::after{
+        transform: rotate(-45deg) translateY(-10px) translateX(25%);
+    }
+    .header1{
+        left: 0;
+    }
+    .heading-container{
+        margin: 25px 0;
+        width: 50%;
+    }
+    .header-container .matratt{
+        font-size: 20px;
+    }
+    .header-container .forklaring{
+        font-size: 15px;
+    }
+    img{
+        width: 35%;
+    }
+    .tillbehor-container{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .innehall{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 0 30%;
+    
+    }
+    h5.tillbehor.underrubrik{
+        margin: 5% 0;
+    }
+    .howto{
+        width: 70%;
+        margin: 10% 0 0 5%;
+    }
+   .howto ol li{
+       margin: 10px 0;
+   }
+    .funfact{
+        width: 90%;
+    }
+    .liknande-recept-container{
+        width: 90%;
+    }
+}
